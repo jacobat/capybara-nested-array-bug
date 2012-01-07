@@ -1,0 +1,5 @@
+= form_for @user, :html => {:multipart => true} do
+  = file_field_tag "file"
+  = hidden_field_tag "menu_item[role_ids][]"
+  .actions
+    = submit_tag 'Save'
